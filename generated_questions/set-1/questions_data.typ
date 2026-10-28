@@ -179,9 +179,9 @@
     ],
     choices: (
       [
-        The model is unbiased --- OLS remains BLUE even when a relevant
-        feature is omitted, as long as the remaining features are
-        observed correctly.
+        The model is unbiased --- OLS remains BLUE (Best Linear Unbiased
+        Estimator) even when a relevant feature is omitted, as long as
+        the remaining features are observed correctly.
       ],
       [
         The model is generally biased, and the size of that bias does
