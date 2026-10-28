@@ -10,8 +10,8 @@
   (
     prompt: [
       A learning algorithm predicts an outcome at a fixed covariate vector
-      $vec(X)$. At this point, the irreducible error is
-      $sigma^2 (vec(X)) = 9$, the bias is $-2$, and the variance is $5$.
+      $arrow(X)$. At this point, the irreducible error is
+      $sigma^2 (arrow(X)) = 9$, the bias is $-2$, and the variance is $5$.
       What is the resulting Average MSE?
     ],
     choices: ([$18$], [$12$], [$9$], [$sqrt(18) approx 4.24$]),
@@ -233,8 +233,8 @@
   (
     prompt: [
       In Lecture 7, the bias-variance decomposition for a prediction
-      $hat(f)(vec(X))$ includes an irreducible error term
-      $sigma^2 (vec(X))$. In Lecture 8, the analogous decomposition for an
+      $hat(f)(arrow(X))$ includes an irreducible error term
+      $sigma^2 (arrow(X))$. In Lecture 8, the analogous decomposition for an
       estimator $hat(theta)$ of a population parameter $theta$ is simply
       $"MSE" = "Bias"^2 + "Variance"$, with *no* irreducible error term.
       Why does the estimator decomposition have no irreducible error
@@ -252,7 +252,7 @@
       ],
       [
         Because the true outcome $Y$ being predicted in the prediction
-        problem is itself random even conditional on $vec(X)$, whereas
+        problem is itself random even conditional on $arrow(X)$, whereas
         the parameter $theta$ being estimated is treated as a *fixed*
         (non-random) quantity under the frequentist view --- so there's
         no analogous "irreducible" randomness in the target itself.
@@ -280,8 +280,8 @@
       [
         Correct. Irreducible error in the prediction setting exists
         because the *target* $Y$ is itself a random variable with
-        leftover variance even given $vec(X)$ exactly (i.e.,
-        $sigma^2 (vec(X)) = "Var"(Y | vec(X)) > 0$ in general). In the
+        leftover variance even given $arrow(X)$ exactly (i.e.,
+        $sigma^2 (arrow(X)) = "Var"(Y | arrow(X)) > 0$ in general). In the
         estimation setting, the target is a population parameter
         $theta$, which the frequentist view treats as a *fixed*,
         non-random quantity --- there's no analogous leftover randomness
@@ -292,7 +292,7 @@
         Confuses two different "shrinks with $n$" facts: it's the
         *variance* of an estimator that shrinks as $n$ grows, not
         irreducible error (which, in the prediction setting, is about
-        the conditional variance of $Y$ given $vec(X)$ and has nothing
+        the conditional variance of $Y$ given $arrow(X)$ and has nothing
         to do with how much data you have).
       ],
     ),

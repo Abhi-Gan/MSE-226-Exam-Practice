@@ -1,8 +1,8 @@
 # ignore files in context, except for src files
-context/cleaned/*
+context/*
 # keep readme
 # !context/cleaned/README.*
-context/raw/*
+!context/src/
 
 # don't publically share my preferences
 user-preferences.md
