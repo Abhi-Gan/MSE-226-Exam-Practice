@@ -1,10 +1,10 @@
 # ignore files in context, except for src files
 context/cleaned/*
 # keep readme
-!context/cleaned/README.*
+# !context/cleaned/README.*
 context/raw/*
 
-# don't publically share my knowledge-tracker
+# don't publically share my preferences
 user-preferences.md
 
 # ==========================================
